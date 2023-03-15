@@ -9,6 +9,7 @@
     border-radius: 18px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: left !important;
 }
 
 .box-1 img {
@@ -56,31 +57,13 @@
     border: 2px solid #ee82ee;
 }
 
-.btn.btn-primary {
-    background-color: #5f63f2 !important;
+.btn.btn-primary-custom {
+    background-color: #a10f2b !important;
     color: white;
     border: 0px;
     padding: 10px;
     font-size: 14px;
     width: 100px;
-}
-
-.btn.btn-primary-register {
-  background-color: #008DEA !important;
-  color: white;
-  border: 0px;
-  padding: 10px;
-  font-size: 14px;
-  width: 100px;
-}
-
-.btn.btn-primary:hover {
-  background-color: #393fd4 !important;
-  color: white;
-  border: 0px;
-  padding: 10px;
-  font-size: 14px;
-  width: 100px;
 }
 
 .btn.btn-primary .fas.fa-chevron-right {
