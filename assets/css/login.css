@@ -2,7 +2,7 @@
 
 .body {
     position: relative;
-    width: 1020px;
+    width: auto;
     height: auto;
     margin: 30px auto;
     border: 1px solid #dddd;
@@ -139,7 +139,7 @@
 
 @media (max-width:767px) {
     body {
-        padding: 10px;
+        /* padding: 10px; */
     }
 
     .body {
