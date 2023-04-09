@@ -26,7 +26,93 @@ jQuery(document).ready(function() {
 		$('nav').toggleClass('navbar-no-bg');	
 
 	});
+	$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+		if (!$(this).next().hasClass('show')) {
+			$(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+		}
+		var $subMenu = $(this).next(".dropdown-menu");
+		$subMenu.toggleClass('show');
 	
+	
+		$(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+			$('.dropdown-submenu .show').removeClass("show");
+		});
+	
+	
+		return false;
+	});
+
+	/*
+
+	*/
+	
+	$('#calendar').fullCalendar({
+		header: {
+			left: 'prev,next today',
+			center: 'title',
+			right: 'month,agendaWeek,agendaDay,listMonth'
+		},
+		defaultDate: moment(new Date(), 'yyyy-MM-dd').format(),
+		navLinks: true, // can click day/week names to navigate views
+		businessHours: true, // display business hours
+		editable: true,
+		events: [
+			{
+				title: 'Business Lunch',
+				start: '2023-04-03T13:00:00',
+				constraint: 'businessHours',
+				color: '#a10f2b'
+			},
+			{
+				title: 'Meeting',
+				start: '2023-04-13T11:00:00',
+				constraint: 'availableForMeeting', // defined below
+				color: '#a10f2b'
+			},
+			{
+				title: 'Conference',
+				start: '2023-04-18',
+				end: '2023-04-20',
+				color: '#a10f2b'
+			},
+			{
+				title: 'Party',
+				start: '2023-04-29T20:00:00',
+				color: '#a10f2b'
+			},
+
+			// areas where "Meeting" must be dropped
+			{
+				id: 'availableForMeeting',
+				start: '2023-04-11T10:00:00',
+				end: '2023-04-11T16:00:00',
+				rendering: 'background'
+			},
+			{
+				id: 'availableForMeeting',
+				start: '2021-11-13T10:00:00',
+				end: '2021-11-13T16:00:00',
+				rendering: 'background'
+			},
+
+			// red areas where no events can be dropped
+			{
+				start: '2021-11-24',
+				end: '2021-11-28',
+				overlap: false,
+				rendering: 'background',
+				color: '#ff9f89'
+			},
+			{
+				start: '2021-11-06',
+				end: '2021-11-08',
+				overlap: false,
+				rendering: 'background',
+				color: '#ff9f89'
+			}
+		]
+	});
+
     /*
         Background slideshow
     */
@@ -35,6 +121,7 @@ jQuery(document).ready(function() {
     /*
 	    Wow
 	*/
+	
 	new WOW().init();
 	
 });

@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/fullcalendar.min.css">
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/media-queries.css">
@@ -31,27 +32,116 @@
 		<!-- Top menu -->
 		<nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Bootstrap 4 Carousel Fullscreen Template</a>
+				<a class="navbar-brand" href="index.html"></a>
 			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			        <span class="navbar-toggler-icon"></span>
 			    </button>
 			    <div class="collapse navbar-collapse" id="navbarNav">
 			        <ul class="navbar-nav ml-auto">
 			            <li class="nav-item">
-			                <a class="nav-link active" href="index.html">beranda</a>
+			                <a class="nav-link active" href="index.html">Beranda</a>
 			            </li>
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Direktori Anggota
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Anggota AI Bali</a></li>
+											<li><a class="dropdown-item" href="#">Anggota IAI Bali ber STRA</a></li>
+											<li><a class="dropdown-item" href="#">Pemegang Surat Rekomendasi</a></li>
+											<li><a class="dropdown-item" href="#">Pemegang Lisensi IAI Bali</a></li>											
+										</ul>
+			            </li>
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Organisasi
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Sejarah</a></li>
+											<li><a class="dropdown-item" href="#">Susunan Pengurus</a></li>
+											<li><a class="dropdown-item" href="#">Tim Assesor Daerah Bali</a></li>
+											<li><a class="dropdown-item" href="#">Visi Misi</a></li>											
+											<li><a class="dropdown-item" href="#">Program Kerja</a></li>
+										</ul>
+			            </li>
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Keprofesian
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Sertifikasi</a></li>
+											<li><a class="dropdown-item" href="#">PKE</a></li>
+											<li><a class="dropdown-item" href="#">PKA</a></li>
+											<li><a class="dropdown-item" href="#">Honorarium Arsitek</a></li>											
+											<li><a class="dropdown-item" href="#">Magang</a></li>
+										</ul>
+			            </li>																											
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Informasi
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Peraturan</a></li>
+											<li><a class="dropdown-item" href="#">Perizinan</a></li>
+											<li><a class="dropdown-item" href="#">PPAR</a></li>
+											<li><a class="dropdown-item" href="#">Literatur</a></li>											
+											<li><a class="dropdown-item" href="#">Software</a></li>
+											<li><a class="dropdown-item" href="#">Lowongan Kerja</a></li>											
+										</ul>
+			            </li>
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Daftar
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Anggota IAI</a></li>
+											<li><a class="dropdown-item" href="https://dewanarsitek.id/" target="_blank">STRA</a></li>
+											<li><a class="dropdown-item" href="#">Lisensi</a></li>
+											<li><a class="dropdown-item" href="https://www.imc.or.id/" target="_blank">AA</a></li>											
+										</ul>
+			            </li>
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Lisensi
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Serba-Serbi Lisensi Arsitek</a></li>
+											<li>
+												<a class="dropdown-item" href="#">Daftar</a>
+												<ul class="submenu dropdown-menu">
+													<li><a class="dropdown-item" href="registrasi.html">Pembekalan</a></li>
+													<li><a class="dropdown-item" href="registrasi.html">Ujian</a></li>
+													<li><a class="dropdown-item" href="registrasi.html">Paket Pembekalan + Ujian</a></li>	
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Pelaksanaan</a>
+												<ul class="submenu dropdown-menu">
+													<li><a class="dropdown-item" href="login.html">Materi Pembekalan</a></li>
+													<li><a class="dropdown-item" href="login.html">Soal Ujian</a></li>
+													<li><a class="dropdown-item" href="ujian.html">Link Soal Ujian Per Batch</a></li>	
+												</ul>
+											</li>
+										</ul>
+			            </li>																											
 			            <li class="nav-item">
-			                <a class="nav-link" href="registrasi.html">Registrasi</a>
+			                <a class="nav-link" href="#">Galeri</a>
 			            </li>
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Mitra
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Organisasi</a></li>
+											<li><a class="dropdown-item" href="#">Pemerintah</a></li>
+											<li><a class="dropdown-item" href="#">Perguruan Tinggi</a></li>
+											<li><a class="dropdown-item" href="#">Swasta</a></li>											
+										</ul>
+			            </li>									
 			            <li class="nav-item">
-			                <a class="nav-link" href="ujian.html">ujian</a>
-			            </li>
-			            <li class="nav-item">
-			                <a class="nav-link scroll-link" href="#section-3">Informasi</a>
-			            </li>
-			            <li class="nav-item">
-			                <a class="nav-link" href="login.html">Login</a>
-			            </li>
+										<a class="nav-link" href="#">FAQ</a>
+								</li>
+								<a class="icon-search" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>									
 			        </ul>
 			    </div>
 		    </div>
@@ -135,184 +225,152 @@
             <!-- End carousel -->
         </div>
 
-        <!-- Section 1 -->
+				<!-- Section 1 -->
         <div class="section-1-container section-container">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col section-1 section-description wow fadeIn">
-	                    <h2>Section 1</h2>
-	                    <div class="divider-1 wow fadeInUp"><span></span></div>
-	                </div>
-	            </div>
-	            <div class="row">
-                	<div class="col-md-4 section-1-box wow fadeInUp">
-                		<div class="row">
-                			<div class="col-md-4">
-			                	<div class="section-1-box-icon">
-			                		<i class="fas fa-magic"></i>
-			                	</div>
-		                	</div>
-	                		<div class="col-md-8">
-	                    		<h3>Branding</h3>
-	                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-	                    	</div>
-	                    </div>
-                    </div>
-                    <div class="col-md-4 section-1-box wow fadeInDown">
-	                	<div class="row">
-                			<div class="col-md-4">
-			                	<div class="section-1-box-icon">
-			                		<i class="fas fa-cog"></i>
-			                	</div>
-		                	</div>
-	                		<div class="col-md-8">
-	                    		<h3>Web design</h3>
-	                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-	                    	</div>
-	                    </div>
-                    </div>
-                    <div class="col-md-4 section-1-box wow fadeInUp">
-	                	<div class="row">
-                			<div class="col-md-4">
-			                	<div class="section-1-box-icon">
-			                		<i class="fab fa-twitter"></i>
-			                	</div>
-		                	</div>
-	                		<div class="col-md-8">
-	                    		<h3>Social media</h3>
-	                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-	                    	</div>
-	                    </div>
-                    </div>
-	            </div>
-	        </div>
-        </div>
+	        <div class="container mt-5 pt-5">
+						<div class="mb-4 text-left">
+							<div class="row">
+								<div class="col-6">
+									<p class="section-title">Kalendar Kegiatan</p>
+								</div>
+								<div class="col-6 mt-4">
+									<a class="btn btn-light float-right"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Lihat List kegiatan</a>
+								</div>																	
+							</div>
+						</div>
+
+						<div id='calendar'></div>
+					</div>
+				</div>
+
 
         <!-- Section 2 -->
         <div class="section-2-container section-container section-container-gray-bg">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col section-2 section-description wow fadeIn">
-	                </div>
-	            </div>
-	            <div class="row">
-	            	<div class="col section-2-box wow fadeInLeft">
-                    	<h3>Section 2</h3>
-                    	<p class="medium-paragraph">
-                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    		sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.
-                    	</p>
-                    	<p>
-                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                    		Ut wisi enim ad minim veniam, quis nostrud.
-                    		Exerci tation ullamcorper suscipit <a href="#">lobortis nisl</a> ut aliquip ex ea commodo consequat.
-                    		Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.
-                    	</p>
-                    	<p>
-                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                    		Ut wisi enim ad minim veniam, quis nostrud.
-                    		Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    	</p>
-	                </div>
-	            </div>
+	        <div class="container mt-5 pt-5">
+						<div class="col-12">
+						<div class="mb-4 text-left">
+							<p class="section-title">Berita dan Kegiatan</p>
+						</div>						
+						<div class="card-deck">
+							<a href="#" class="card">
+								<img class="card-img-top" src="http://www.iaibali.org/artikel/musyawarah-provinsi-musprov-x-ikatan-arsitek-indonesia-provinsi-bali-2021-01-15-153245.jpg" alt="">
+								<div class="card-body">
+									<!-- <h5 class="card-title">Card title</h5> -->
+									<p class="text-left card-title-sm"><small class="text-muted">15-01-2021 15:32:45</small></p>
+									<p class="text-left card-title-md">Musyawarah Provinsi (Musprov) X Ikatan Arsitek Indonesia Provinsi Bali.</p>
+									
+								</div>
+							</a>
+							<a href="#" class="card">
+								<img class="card-img-top" src="http://www.iaibali.org/artikel/iai-bali-awards-2022-06-07-221819.jpeg" alt="Card image cap">
+								<div class="card-body">
+									<!-- <h5 class="card-title">Card title</h5> -->
+									<p class="text-left card-title-sm"><small class="text-muted">07-06-2022 22:18:19</small></p>
+									<p class="text-left card-title-md">IAI BALI AWARDS.</p>
+								</div>
+							</a>
+							<a href="#" class="card">
+								<img class="card-img-top" src="http://www.iaibali.org/artikel/thumbs/iai-bali-menggelar-program-keprofesian-strata-3-5-dan-workshop-ska-2020-03-21-132117.png" alt="Card image cap">
+								<div class="card-body">
+									<!-- <h5 class="card-title">Card title</h5> -->
+									<p class="text-left card-title-sm"><small class="text-muted">21-03-2020 13:21:17</small></p>
+									<p class="text-left card-title-md">IAI Bali Menggelar PROGRAM KEPROFESIAN STRATA 3 & 5 DAN WORKSHOP SKA.</p>
+								</div>
+							</a>
+							<a href="#" class="card">
+								<img class="card-img-top" src="http://www.iaibali.org/artikel/seminar-nasional-tantangan-dalam-mewujudkan-desain-arsitektur-bangunan-gedung-hijau-pada-masa-ini-dan-masa-depan-2022-05-13-170001.jpeg" alt="Card image cap">
+								<div class="card-body">
+									<!-- <h5 class="card-title">Card title</h5> -->
+									<p class="text-left card-title-sm"><small class="text-muted">13-05-2022 17:00:01</small></p>
+									<p class="text-left card-title-md">Seminar Nasional: Tantangan dalam Mewujudkan Desain Arsitektur Bangunan Gedung Hijau Pada Masa Ini dan Masa Depan.</p>
+								</div>
+							</a>
+						</div>
+						
+						<div class="card-deck">
+							<a href="#" class="card">
+								<img class="card-img-top" src="http://www.iaibali.org/artikel/thumbs/penataran-kode-etik-strata-1-2-dan-workshop-ska-2019-2019-12-20-180356.jpg" alt="">
+								<div class="card-body">
+									<!-- <h5 class="card-title">Card title</h5> -->
+									<p class="text-left card-title-sm"><small class="text-muted">20-12-2019 18:03:56</small></p>
+									<p class="text-left card-title-md">PENATARAN KODE ETIK, STRATA 1 & 2 DAN WORKSHOP SKA 2019.</p>
+									
+								</div>
+							</a>
+							<a href="#" class="card">
+								<img class="card-img-top" src="http://www.iaibali.org/artikel/thumbs/emansipasi-wanita-di-dunia-arsitektur-global-2022-03-28-200828.jpeg" alt="Card image cap">
+								<div class="card-body">
+									<!-- <h5 class="card-title">Card title</h5> -->
+									<p class="text-left card-title-sm"><small class="text-muted">28-03-2022 20:08:28</small></p>
+									<p class="text-left card-title-md">Emansipasi Wanita di Dunia Arsitektur Global.</p>
+								</div>
+							</a>
+							<a href="#" class="card">
+								<img class="card-img-top" src="http://www.iaibali.org/artikel/thumbs/international-talkshow-the-contribution-of-traditional-and-vernacular-architecture-on-the-hospitality-product-dan-malam-penghargaan-iai-bali-awrad-2019-2019-10-10-105832.jpg" alt="Card image cap">
+								<div class="card-body">
+									<!-- <h5 class="card-title">Card title</h5> -->
+									<p class="text-left card-title-sm"><small class="text-muted">10-10-2019 10:58:32</small></p>
+									<p class="text-left card-title-md">International Talkshow: The Contribution of Traditional and Vernacular Architecture on the Hospitality Product dan Malam Penghargaan IAI Bali Awrad 2019.</p>
+								</div>
+							</a>
+							<a href="#" class="card">
+								<img class="card-img-top" src="http://www.iaibali.org/artikel/thumbs/pengembangan-keprofesian-berkelanjutan-2021-09-23-230117.jpeg" alt="Card image cap">
+								<div class="card-body">
+									<!-- <h5 class="card-title">Card title</h5> -->
+									<p class="text-left card-title-sm"><small class="text-muted">23-09-2021 23:01:17</small></p>
+									<p class="text-left card-title-md">Pengembangan Keprofesian Berkelanjutan.</p>
+								</div>
+							</a>
+						</div>		
+
+						<div class="w-100 mt-4 mb-4">
+							<div>
+								<a class="btn btn-light">BERITA LAINNYA KLIK DISINI...</a>
+							</div>
+						</div>
+
+						</div>
 	        </div>
         </div>
 
 		<!-- Section 3 -->
         <div class="section-3-container section-container">
-	        <div class="container">
+	        <div class="container mt-4 pt-4 mb-4 pb-4">
+						<div class="col-12">
+							<div class="mb-4 text-left ml-4">
+								<div class="row w-100">
+										<p class="section-title">Mitra IAI</p>
+								</div>
+							</div>
+						</div>							
 
-	            <div class="row">
-	                <div class="col section-3 section-description wow fadeIn">
-	                    <h2>Section 3</h2>
-	                    <div class="divider-1 wow fadeInUp"><span></span></div>
-	                </div>
-	            </div>
+						<div class="row">
+							<div class="col-4">
+									<a href="#" class="border-bottom-0"><img class="ads-silver mb-4" src="https://karir.propanraya.com/assets/images/propan.png" alt=""></a>
+									<a href="#" class="border-bottom-0"><img class="ads-silver mb-4" src="http://www.iaibali.org/sponsor/sponsor-2022-08-12-101021.jpg" alt=""></a>								
+									<a href="#" class="border-bottom-0"><img class="ads-silver mb-4" src="https://www.dekkson.com/images/brand/ae6fc-SCHNELL%20PANEL_80X80px.png" alt=""></a>								
+									<a href="#" class="border-bottom-0"><img class="ads-silver mb-4" src="https://uploads-ssl.webflow.com/5c5d23778bcb8097184dfb68/5c90ae3157008a3913400429_logo_dekson.jpg" alt=""></a>								
+									<a href="#" class="border-bottom-0"><img class="ads-silver mb-4" src="https://upload.wikimedia.org/wikipedia/id/thumb/7/77/Logo_Semen_Gresik.svg/640px-Logo_Semen_Gresik.svg.png" alt=""></a>
+									<a href="#" class="border-bottom-0"><img class="ads-silver mb-4" src="https://upload.wikimedia.org/wikipedia/id/thumb/6/6d/Logo_Semen_Padang.svg/1200px-Logo_Semen_Padang.svg.png" alt=""></a>								
 
-	            <div class="row">
-	                <div class="col-md-6 section-3-box wow fadeInLeft">
-	                	<div class="row">
-	                		<div class="col-md-3">
-	                			<div class="section-3-box-icon">
-	                				<i class="fas fa-paperclip"></i>
-	                			</div>
-	                		</div>
-	                		<div class="col-md-9">
-	                			<h3>Ut wisi enim ad minim</h3>
-		                    	<p>
-		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-		                    		Ut wisi enim ad minim veniam, quis nostrud.
-		                    	</p>
-	                		</div>
-	                	</div>
-	                </div>
-	                <div class="col-md-6 section-3-box wow fadeInLeft">
-	                	<div class="row">
-	                		<div class="col-md-3">
-	                			<div class="section-3-box-icon">
-	                				<i class="fas fa-pencil-alt"></i>
-	                			</div>
-	                		</div>
-	                		<div class="col-md-9">
-	                			<h3>Sed do eiusmod tempor</h3>
-		                    	<p>
-		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-		                    		Ut wisi enim ad minim veniam, quis nostrud.
-		                    	</p>
-	                		</div>
-	                	</div>
-	                </div>
-	            </div>
+							</div>
+							<div class="col-8">
+									<a href="#" class="border-bottom-0"><img class="ads-gold mb-4" src="https://karir.propanraya.com/assets/images/propan.png" alt=""></a>
+									<a href="#" class="border-bottom-0"><img class="ads-gold mb-4" src="http://www.iaibali.org/sponsor/sponsor-2022-08-12-101021.jpg" alt=""></a>								
+									<a href="#" class="border-bottom-0"><img class="ads-gold mb-4" src="https://www.dekkson.com/images/brand/ae6fc-SCHNELL%20PANEL_80X80px.png" alt=""></a>																
+									<a href="#" class="border-bottom-0"><img class="ads-gold mb-4" src="http://www.iaibali.org/sponsor/sponsor-2022-04-20-081050.png" alt=""></a>	
+									<a href="#" class="border-bottom-0"><img class="ads-gold mb-4" src="https://indoberkainvestama.com/images/blog/BLOG__merk-baja-ringan-dan-bahan-lainnya-untuk-membangun-rumah__20190411015812.jpg" alt=""></a>								
+									<a href="#" class="border-bottom-0"><img class="ads-gold mb-4" src="https://verotekintiprima.co.id/wp-content/uploads/2020/11/Logo-RUCIKA-dimana-air-mengalir-sampai-jauh-scaled.jpg" alt=""></a>								
+							</div>							
 
-	            <div class="row">
-	                <div class="col-md-6 section-3-box wow fadeInLeft">
-	                	<div class="row">
-	                		<div class="col-md-3">
-	                			<div class="section-3-box-icon">
-	                				<i class="fas fa-cloud"></i>
-	                			</div>
-	                		</div>
-	                		<div class="col-md-9">
-	                			<h3>Quis nostrud exerci tat</h3>
-		                    	<p>
-		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-		                    		Ut wisi enim ad minim veniam, quis nostrud.
-		                    	</p>
-	                		</div>
-	                	</div>
-	                </div>
-	                <div class="col-md-6 section-3-box wow fadeInLeft">
-	                	<div class="row">
-	                		<div class="col-md-3">
-	                			<div class="section-3-box-icon">
-	                				<i class="fab fa-google"></i>
-	                			</div>
-	                		</div>
-	                		<div class="col-md-9">
-	                			<h3>Minim veniam quis nostrud</h3>
-		                    	<p>
-		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-		                    		Ut wisi enim ad minim veniam, quis nostrud.
-		                    	</p>
-	                		</div>
-	                	</div>
-	                </div>
-	            </div>
-
+						</div>
 	        </div>
         </div>
 
 		<!-- Section 4 -->
 			<div class="section-4-container section-container section-container-image-bg">
-				<div class="container">
+				<div class="container">					
 						<div class="row">
-								<!--<div class="col section-4 section-description wow fadeInLeftBig">
-									<h2>Section 4</h2>
-										<p>
-											Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-											aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud.
-										</p>
-								</div>-->
 							<div class="col-md-4">
 								<h6 class="footer-top-title text-left mt-5">Ikatan Arsitek Indonesia</h6>
 								<ul class="list-icon footer-top-title text-left p-0 mt-3">
@@ -369,6 +427,9 @@
 		<script src="assets/js/jquery-migrate-3.3.0.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/fullcalendar.min.js"></script>
+
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/waypoints.min.js"></script>

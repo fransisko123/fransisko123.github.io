@@ -49,8 +49,8 @@
 	.top-content h1,
 	.top-content h2,
 	.top-content h3 { font-size: 18px; }
-
 }
+
 
 
 /* Retina-ize images/icons */
@@ -69,3 +69,29 @@ only screen and (                min-resolution: 2dppx) {
     }
 
 }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 48.7%;
+    flex: 0 0 48.7%;
+		border-radius: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+		border-radius: 15px;
+  }
+}
+
+@media (min-width: 992px)
+{
+  .card-deck .card {
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%;
+		border-radius: 15px;
+  }
+}
+

@@ -31,36 +31,125 @@
     <body>
 
 		<!-- Top menu -->
-		<nav class="navbar navbar-dark navbar-expand-md">
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Bootstrap 4 Carousel Fullscreen Template</a>
+				<a class="navbar-brand" href="index.html"></a>
 			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			        <span class="navbar-toggler-icon"></span>
 			    </button>
 			    <div class="collapse navbar-collapse" id="navbarNav">
 			        <ul class="navbar-nav ml-auto">
 			            <li class="nav-item">
-			                <a class="nav-link" href="index.html">beranda</a>
+			                <a class="nav-link active" href="index.html">Beranda</a>
 			            </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="registrasi.html">Registrasi</a>
-                  </li>
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Direktori Anggota
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Anggota AI Bali</a></li>
+											<li><a class="dropdown-item" href="#">Anggota IAI Bali ber STRA</a></li>
+											<li><a class="dropdown-item" href="#">Pemegang Surat Rekomendasi</a></li>
+											<li><a class="dropdown-item" href="#">Pemegang Lisensi IAI Bali</a></li>											
+										</ul>
+			            </li>
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Organisasi
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Sejarah</a></li>
+											<li><a class="dropdown-item" href="#">Susunan Pengurus</a></li>
+											<li><a class="dropdown-item" href="#">Tim Assesor Daerah Bali</a></li>
+											<li><a class="dropdown-item" href="#">Visi Misi</a></li>											
+											<li><a class="dropdown-item" href="#">Program Kerja</a></li>
+										</ul>
+			            </li>
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Keprofesian
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Sertifikasi</a></li>
+											<li><a class="dropdown-item" href="#">PKE</a></li>
+											<li><a class="dropdown-item" href="#">PKA</a></li>
+											<li><a class="dropdown-item" href="#">Honorarium Arsitek</a></li>											
+											<li><a class="dropdown-item" href="#">Magang</a></li>
+										</ul>
+			            </li>																											
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Informasi
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Peraturan</a></li>
+											<li><a class="dropdown-item" href="#">Perizinan</a></li>
+											<li><a class="dropdown-item" href="#">PPAR</a></li>
+											<li><a class="dropdown-item" href="#">Literatur</a></li>											
+											<li><a class="dropdown-item" href="#">Software</a></li>
+											<li><a class="dropdown-item" href="#">Lowongan Kerja</a></li>											
+										</ul>
+			            </li>
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Daftar
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Anggota IAI</a></li>
+											<li><a class="dropdown-item" href="https://dewanarsitek.id/" target="_blank">STRA</a></li>
+											<li><a class="dropdown-item" href="#">Lisensi</a></li>
+											<li><a class="dropdown-item" href="https://www.imc.or.id/" target="_blank">AA</a></li>											
+										</ul>
+			            </li>
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Lisensi
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Serba-Serbi Lisensi Arsitek</a></li>
+											<li>
+												<a class="dropdown-item" href="#">Daftar</a>
+												<ul class="submenu dropdown-menu">
+													<li><a class="dropdown-item" href="registrasi.html">Pembekalan</a></li>
+													<li><a class="dropdown-item" href="registrasi.html">Ujian</a></li>
+													<li><a class="dropdown-item" href="registrasi.html">Paket Pembekalan + Ujian</a></li>	
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Pelaksanaan</a>
+												<ul class="submenu dropdown-menu">
+													<li><a class="dropdown-item" href="login.html">Materi Pembekalan</a></li>
+													<li><a class="dropdown-item" href="login.html">Soal Ujian</a></li>
+													<li><a class="dropdown-item" href="ujian.html">Link Soal Ujian Per Batch</a></li>	
+												</ul>
+											</li>
+										</ul>
+			            </li>																											
 			            <li class="nav-item">
-			                <a class="nav-link" href="ujian.html">ujian</a>
+			                <a class="nav-link" href="#">Galeri</a>
 			            </li>
+			            <li class="nav-item dropdown">
+										<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+											Mitra
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Organisasi</a></li>
+											<li><a class="dropdown-item" href="#">Pemerintah</a></li>
+											<li><a class="dropdown-item" href="#">Perguruan Tinggi</a></li>
+											<li><a class="dropdown-item" href="#">Swasta</a></li>											
+										</ul>
+			            </li>									
 			            <li class="nav-item">
-			                <a class="nav-link scroll-link" href="#section-3">Informasi</a>
-			            </li>
-			            <li class="nav-item">
-			                <a class="nav-link active" href="login.html">Login</a>
-			            </li>
+										<a class="nav-link" href="#">FAQ</a>
+								</li>
+								<a class="icon-search" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>									
 			        </ul>
 			    </div>
 		    </div>
 		</nav>
 
     <!-- SECTION 1 -->
-    <div class="section-1-container section-container">
+    <div class="section-1-container section-container mt-5 pt-5">
       <div class="container">
         <div class="body d-md-flex align-items-center">
             <div class="box-1 mt-md-0 mt-5">

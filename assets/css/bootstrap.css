@@ -4481,6 +4481,7 @@ input[type="button"].btn-block {
   .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    max-width: 100%;
   }
   .navbar-expand-md .navbar-collapse {
     display: -ms-flexbox !important;
