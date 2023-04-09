@@ -1,5 +1,12 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
+	.navbar-brand {
+    width: 80px !important;
+    height: 60px;
+    background: url(../img/logo.png) left center no-repeat;
+    border: 0;
+    text-indent: -99999px;		
+	}	
 
 	.section-1-box .section-1-box-icon { width: 60px; height: 60px; font-size: 32px; line-height: 60px; }
 
@@ -68,6 +75,16 @@ only screen and (                min-resolution: 2dppx) {
     	background-image: url(../img/logo.png) !important; background-repeat: no-repeat !important; background-size: 123px 34px !important;
     }
 
+}
+@media (min-width: 1204px) {
+	.navbar-brand {
+    width: 80px !important;
+    width: 80px !important;
+    height: 60px;
+    background: url(../img/logo.png) left center no-repeat;
+    border: 0;
+    text-indent: -99999px;		
+	}	
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
