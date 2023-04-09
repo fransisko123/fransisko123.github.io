@@ -13,6 +13,14 @@ function scroll_to(clicked_link, nav_height) {
 
 
 jQuery(document).ready(function() {
+	$(".owl-carousel").owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true		
+	});
 	
 	/*
 	    Navigation
