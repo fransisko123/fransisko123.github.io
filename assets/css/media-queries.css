@@ -76,7 +76,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 
 }
-@media (min-width: 1204px) {
+@media (max-width: 1204px) {
 	.navbar-brand {
     width: 80px !important;
     width: 80px !important;

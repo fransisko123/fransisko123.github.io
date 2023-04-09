@@ -21,7 +21,6 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/login.css">
         <link rel="stylesheet" href="assets/css/media-queries.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
         <!-- Favicon and touch icons -->
         <link rel="shortcut icon" href="assets/ico/favicon.svg">
@@ -35,7 +34,7 @@
     <body>
 
 		<!-- Top menu -->
-    <nav class="navbar navbar-dark fixed-top navbar-expand-md">
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
 			<div class="container">
 				<a class="navbar-brand" href="index.html"></a>
 			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -152,99 +151,53 @@
 			    </div>
 		    </div>
 		</nav>
-    <!-- SECTION 1 -->
-    <div class="section-1-container section-container mt-5 pt-5">
-      <div class="container">
-        <div class="body d-md-flex align-items-center">
-            <div class="box-1 mt-md-0 mt-5">
-              <img src="assets/img/auth_vector/reg.avif"
-                    class="" alt="">
-            </div>
-            <div class=" box-2 d-flex flex-column h-100">
-                <div class="mt-5">
-                    <p class="mb-1 h-1">Registrasi <span style="color: #a10f2b;">Member</span>.</p>
-                    <p class="text-muted mb-2">Apakah anggota IAI atau bukan.</p>
-                    <div class="d-flex flex-column">
-                      <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> <span class="step"></span> <span class="step"></span> </div>
-                      <form method="POST" action="#">
-                        <div class="form-group">
-                          <label for="ktp" class="float-left">Keanggotaan</label>
-                          <select class="form-control" id="keanggotaan">
-                            <option value="">Silahkan Pilih Keanggotaan</option>
-                            <option value="ya">Anggota IAI</option>
-                            <option value="tidak">Bukan Anggota</option>
-                          </select>                          
-                        </div>
-                        <div id="data-nia" class="form-group d-none">
-                          <label for="name">Nomor Induk Anggota</label> <span style="font-size: 10px;">(example: 0419451025)</span>
-                          <input type="text" class="form-control" id="nia" placeholder="Nomor Anggota" name="nia" onchange="search()" onkeypress="search()" onkeydown="search()">
 
-                        </div>
-                        <div id="data-profile" class="d-none">
-                          <p>Nama : Adie Wahyudi Oktavia Gama</p>
-                          <p>Alamat : Jalan. Nangka Gg. Kenari No. 100</p>
-                          <p>Phone : 0877010905553</p>
-                          <p>Email : aadie25@gmail.com</p>
+        <!-- Top content -->
+        <div class="top-content">
+          <!-- Carousel -->
+          <div id="carousel-example" class="carousel slide" data-ride="carousel">
 
-                        </div>
-                        <div id="data-diri" class="row d-none">
-                          <div class="col">
-                            <label for="name">Nama</label>
-                            <input type="text" class="form-control" id="name" placeholder="Nama" name="name" required>
-                          </div>
-                          <div class="col">
-                            <label for="ktp">Nomor KTP</label>
-                            <input type="number" class="form-control" id="ktp" placeholder="Nomor KTP" min="0" name="ktp" required>
-                          </div>
-                        </div>
-                        <div id="data-phone" class="form-group d-none">
-                          <label for="phone">Nomor Telepon</label>
-                          <input type="number" class="form-control" id="phone" placeholder="Nomor Telp" min="0" name="phone" required>
-                        </div>
-                        <div id="data-alamat" class="form-group d-none">
-                          <label for="alamat">Alamat</label>
-                          <textarea class="form-control" id="alamat" rows="3" name="alamat" placeholder="Alamat..."></textarea>
-                        </div>
-                        <div id="data-email" class="form-group d-none">
-                          <label for="email">Email Address</label>
-                          <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
-                        </div>
-                        <div id="data-password" class="form-group d-none">
-                          <label for="password-field">Password</label>
-                          <div>
-                            <!-- <input id="password-field" type="password" class="form-control " name="password" placeholder="Your password"> -->
-                            <input type="password" name="password" placeholder="Your password" autocomplete="current-password" id="password" class="form-control" required>
-                            <!-- <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i> -->
-                          </div>
-                        </div>
-                        <div id="data-confirm-password" class="form-group d-none">
-                          <label for="password-field">Confirmation Password</label>
-                          <div>
-                            <!-- <input id="password-field" type="password" class="form-control " name="password" placeholder="Your password"> -->
-                            <input type="password" name="password" placeholder="Your password" autocomplete="current-password" id="password" class="form-control" required>
-                            <!-- <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i> -->
-                          </div>
-                        </div>
-                        <div class="button-group d-flex pt-1 justify-content-md-start justify-content-center">
-                          <button class="btn btn-primary-custom btn-default btn-squared mr-15 text-capitalize lh-normal px-50 py-15 signIn-createBtn d-none">
-                          sign up
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                </div>
-                <div id="data-agree" class="mt-5 d-none">
-                    <p class="footer text-muted mb-0 mt-md-0 mt-4">By register you agree with our
-                        <span>terms and conditions</span>and
-                        <span>privacy policy</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example" data-slide-to="1"></li>
+        </ol>
 
-  <!-- SECTION 2 -->
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="bg-overlay"></div>
+                      <img src="assets/img/slides/slide-img-1.jpg" class="d-block w-100" alt="slide-img-1">
+                      <div class="carousel-caption">
+                          <h1>Batch 1 10 April 2023</h1>
+                          <div class="carousel-caption-description">
+                            <a class="btn btn-primary" href="registrasi.html">Daftar</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="bg-overlay"></div>
+                      <img src="assets/img/slides/slide-img-2.png" class="d-block w-100" alt="slide-img-2">
+                      <div class="carousel-caption">
+                          <h3>Batch 2 12 Juni 2023</h3>
+                          <div class="carousel-caption-description">
+                              <a class="btn btn-primary" href="registrasi.html">Daftar</a>                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+          <!-- End carousel -->
+      </div>
+
+  <!-- SECTION 1 -->
   <div class="section-4-container section-container section-container-image-bg">
     <div class="container">
         <div class="row">
@@ -315,8 +268,9 @@
 		<script src="assets/js/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>    
-        <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+      <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/waypoints.min.js"></script>
         <script src="assets/js/scripts.js"></script>

@@ -13,10 +13,10 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/fullcalendar.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+				<link rel="stylesheet" href="assets/css/fullcalendar.min.css">
         <link rel="stylesheet" href="assets/css/owl/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/css/owl/owl.theme.default.css">
-
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/media-queries.css">
@@ -49,8 +49,8 @@
 											Direktori Anggota
 										</a>
 										<ul class="dropdown-menu">
-											<li><a class="dropdown-item" href="#">Anggota AI Bali</a></li>
-											<li><a class="dropdown-item" href="#">Anggota IAI Bali ber STRA</a></li>
+											<li><a class="dropdown-item" href="anggota.html">Anggota AI Bali</a></li>
+											<li><a class="dropdown-item" href="anggota.html">Anggota IAI Bali ber STRA</a></li>
 											<li><a class="dropdown-item" href="#">Pemegang Surat Rekomendasi</a></li>
 											<li><a class="dropdown-item" href="#">Pemegang Lisensi IAI Bali</a></li>											
 										</ul>
@@ -113,9 +113,9 @@
 											<li>
 												<a class="dropdown-item" href="#">Daftar</a>
 												<ul class="submenu dropdown-menu">
-													<li><a class="dropdown-item" href="registrasi.html">Pembekalan</a></li>
-													<li><a class="dropdown-item" href="registrasi.html">Ujian</a></li>
-													<li><a class="dropdown-item" href="registrasi.html">Paket Pembekalan + Ujian</a></li>	
+													<li><a class="dropdown-item" href="pembekalan.html">Pembekalan</a></li>
+													<li><a class="dropdown-item" href="pembekalan.html">Ujian</a></li>
+													<li><a class="dropdown-item" href="pembekalan.html">Paket Pembekalan + Ujian</a></li>	
 												</ul>
 											</li>
 											<li>
@@ -253,22 +253,48 @@
 	        <div class="container mt-5 pt-5">
 						<div class="col-12">
 						<div class="mb-4 text-left">
-							<p class="section-title">Berita dan Kegiatan</p>
-						</div>						
+							<div class="row">
+								<div class="col-6">
+									<p class="section-title">Berita dan Kegiatan</p>
+								</div>
+								<div class="col-6">
+									<p class="section-title float-right">Video</p>
+								</div>																	
+							</div>
+
+						</div>
+						<!-- <div class="col-6">
+							<div class="card-deck">
+								<a href="#" class="card">
+									<img class="card-img-top" src="http://www.iaibali.org/artikel/musyawarah-provinsi-musprov-x-ikatan-arsitek-indonesia-provinsi-bali-2021-01-15-153245.jpg" alt="">
+									<div class="card-body">
+										<p class="text-left card-title-sm"><small class="text-muted">15-01-2021 15:32:45</small></p>
+										<p class="text-left card-title-md">Musyawarah Provinsi (Musprov) X Ikatan Arsitek Indonesia Provinsi Bali.</p>									
+									</div>
+								</a>
+								<a href="#" class="card">
+									<img class="card-img-top" src="http://www.iaibali.org/artikel/iai-bali-awards-2022-06-07-221819.jpeg" alt="Card image cap">
+									<div class="card-body">
+										<p class="text-left card-title-sm"><small class="text-muted">07-06-2022 22:18:19</small></p>
+										<p class="text-left card-title-md">IAI BALI AWARDS.</p>
+									</div>
+								</a>
+							</div>	
+						</div>
+						<div class="col-6">
+
+						</div>												 -->
 						<div class="card-deck">
 							<a href="#" class="card">
 								<img class="card-img-top" src="http://www.iaibali.org/artikel/musyawarah-provinsi-musprov-x-ikatan-arsitek-indonesia-provinsi-bali-2021-01-15-153245.jpg" alt="">
 								<div class="card-body">
-									<!-- <h5 class="card-title">Card title</h5> -->
 									<p class="text-left card-title-sm"><small class="text-muted">15-01-2021 15:32:45</small></p>
-									<p class="text-left card-title-md">Musyawarah Provinsi (Musprov) X Ikatan Arsitek Indonesia Provinsi Bali.</p>
-									
+									<p class="text-left card-title-md">Musyawarah Provinsi (Musprov) X Ikatan Arsitek Indonesia Provinsi Bali.</p>									
 								</div>
 							</a>
 							<a href="#" class="card">
 								<img class="card-img-top" src="http://www.iaibali.org/artikel/iai-bali-awards-2022-06-07-221819.jpeg" alt="Card image cap">
 								<div class="card-body">
-									<!-- <h5 class="card-title">Card title</h5> -->
 									<p class="text-left card-title-sm"><small class="text-muted">07-06-2022 22:18:19</small></p>
 									<p class="text-left card-title-md">IAI BALI AWARDS.</p>
 								</div>
@@ -276,7 +302,6 @@
 							<a href="#" class="card">
 								<img class="card-img-top" src="http://www.iaibali.org/artikel/thumbs/iai-bali-menggelar-program-keprofesian-strata-3-5-dan-workshop-ska-2020-03-21-132117.png" alt="Card image cap">
 								<div class="card-body">
-									<!-- <h5 class="card-title">Card title</h5> -->
 									<p class="text-left card-title-sm"><small class="text-muted">21-03-2020 13:21:17</small></p>
 									<p class="text-left card-title-md">IAI Bali Menggelar PROGRAM KEPROFESIAN STRATA 3 & 5 DAN WORKSHOP SKA.</p>
 								</div>
@@ -284,7 +309,6 @@
 							<a href="#" class="card">
 								<img class="card-img-top" src="http://www.iaibali.org/artikel/seminar-nasional-tantangan-dalam-mewujudkan-desain-arsitektur-bangunan-gedung-hijau-pada-masa-ini-dan-masa-depan-2022-05-13-170001.jpeg" alt="Card image cap">
 								<div class="card-body">
-									<!-- <h5 class="card-title">Card title</h5> -->
 									<p class="text-left card-title-sm"><small class="text-muted">13-05-2022 17:00:01</small></p>
 									<p class="text-left card-title-md">Seminar Nasional: Tantangan dalam Mewujudkan Desain Arsitektur Bangunan Gedung Hijau Pada Masa Ini dan Masa Depan.</p>
 								</div>
@@ -295,7 +319,6 @@
 							<a href="#" class="card">
 								<img class="card-img-top" src="http://www.iaibali.org/artikel/thumbs/penataran-kode-etik-strata-1-2-dan-workshop-ska-2019-2019-12-20-180356.jpg" alt="">
 								<div class="card-body">
-									<!-- <h5 class="card-title">Card title</h5> -->
 									<p class="text-left card-title-sm"><small class="text-muted">20-12-2019 18:03:56</small></p>
 									<p class="text-left card-title-md">PENATARAN KODE ETIK, STRATA 1 & 2 DAN WORKSHOP SKA 2019.</p>
 									
@@ -304,7 +327,6 @@
 							<a href="#" class="card">
 								<img class="card-img-top" src="http://www.iaibali.org/artikel/thumbs/emansipasi-wanita-di-dunia-arsitektur-global-2022-03-28-200828.jpeg" alt="Card image cap">
 								<div class="card-body">
-									<!-- <h5 class="card-title">Card title</h5> -->
 									<p class="text-left card-title-sm"><small class="text-muted">28-03-2022 20:08:28</small></p>
 									<p class="text-left card-title-md">Emansipasi Wanita di Dunia Arsitektur Global.</p>
 								</div>
@@ -312,7 +334,6 @@
 							<a href="#" class="card">
 								<img class="card-img-top" src="http://www.iaibali.org/artikel/thumbs/international-talkshow-the-contribution-of-traditional-and-vernacular-architecture-on-the-hospitality-product-dan-malam-penghargaan-iai-bali-awrad-2019-2019-10-10-105832.jpg" alt="Card image cap">
 								<div class="card-body">
-									<!-- <h5 class="card-title">Card title</h5> -->
 									<p class="text-left card-title-sm"><small class="text-muted">10-10-2019 10:58:32</small></p>
 									<p class="text-left card-title-md">International Talkshow: The Contribution of Traditional and Vernacular Architecture on the Hospitality Product dan Malam Penghargaan IAI Bali Awrad 2019.</p>
 								</div>
@@ -320,7 +341,6 @@
 							<a href="#" class="card">
 								<img class="card-img-top" src="http://www.iaibali.org/artikel/thumbs/pengembangan-keprofesian-berkelanjutan-2021-09-23-230117.jpeg" alt="Card image cap">
 								<div class="card-body">
-									<!-- <h5 class="card-title">Card title</h5> -->
 									<p class="text-left card-title-sm"><small class="text-muted">23-09-2021 23:01:17</small></p>
 									<p class="text-left card-title-md">Pengembangan Keprofesian Berkelanjutan.</p>
 								</div>
@@ -410,7 +430,13 @@
 								<p class="p-0 mt-5 text-left"><button type="button" class="btn btn-light">Login Admin</button></p>
 								<p class="p-0 mt-2 text-left"><button type="button" class="btn btn-light">Peta Situs</button></p>
 								<hr>
-								<p class="p-0 text-left"><image src="./assets//ico/facebook.png" height="40" width="40" /> </p>
+								<div class="rounded-social-buttons">
+									<a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+									<a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+									<a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+									<a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+									<a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+								</div>								
 							</div>
 						</div>
 				</div>
@@ -448,6 +474,9 @@
 		<script src="assets/js/moment.min.js"></script>
 		<script src="assets/js/fullcalendar.min.js"></script>
 		<script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
 
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/wow.min.js"></script>

@@ -11,6 +11,58 @@ function scroll_to(clicked_link, nav_height) {
 	}
 }
 
+function initAnggota(){
+	$('#data-nia').removeClass('d-none');
+	$('#data-profile').addClass('d-none');
+	$('#data-password').addClass('d-none');
+	$('#data-confirm-password').addClass('d-none');
+	$('.signIn-createBtn').addClass('d-none');
+	$('#data-agree').addClass('d-none');
+
+	$('#data-diri').addClass('d-none');
+	$('#data-phone').addClass('d-none');
+	$('#data-alamat').addClass('d-none');
+	$('#data-email').addClass('d-none');
+
+}
+
+function initBukanAnggota(){
+	$('#data-nia').addClass('d-none');
+	$('#data-password').removeClass('d-none');
+	$('#data-confirm-password').removeClass('d-none');
+	$('.signIn-createBtn').removeClass('d-none');
+	$('#data-agree').removeClass('d-none');
+	$('#data-diri').removeClass('d-none');
+	$('#data-phone').removeClass('d-none');
+	$('#data-alamat').removeClass('d-none');
+	$('#data-email').removeClass('d-none');
+	$('#nia').val('');
+}
+function initNotChoice(){
+	$('#data-nia').addClass('d-none');
+	$('#data-profile').addClass('d-none');
+	$('#data-password').addClass('d-none');
+	$('#data-confirm-password').addClass('d-none');
+	$('.signIn-createBtn').addClass('d-none');
+	$('#data-agree').addClass('d-none');
+	$('#data-diri').addClass('d-none');
+	$('#data-phone').addClass('d-none');
+	$('#data-alamat').addClass('d-none');
+	$('#data-email').addClass('d-none');
+	$('#nia').val('');
+}
+
+function search(){
+	let values = $('#nia').val();
+	if(values === '0419451025'){
+		$('#data-profile').removeClass('d-none');
+		$('#data-password').removeClass('d-none');
+		$('#data-confirm-password').removeClass('d-none');
+		$('.signIn-createBtn').removeClass('d-none');
+		$('#data-agree').removeClass('d-none');	
+	}
+}
+
 
 jQuery(document).ready(function() {
 	$(".owl-carousel").owlCarousel({
@@ -18,10 +70,44 @@ jQuery(document).ready(function() {
     loop:true,
     margin:10,
     autoplay:true,
-    autoplayTimeout:1000,
+    autoplayTimeout:5000,
     autoplayHoverPause:true		
 	});
 	
+	
+	// datatables
+	$("#example").DataTable({
+    aaSorting: [],
+    responsive: true,
+
+    columnDefs: [
+      {
+        responsivePriority: 1,
+        targets: 0
+      },
+      {
+        responsivePriority: 2,
+        targets: -1
+      }
+    ]
+  });
+
+	//$('.dataTables_length').css({text-align: "left"});
+	$('.dataTables_filter').hide();
+	$('[data-toggle="tooltip"]').tooltip();  
+
+	//show hide form
+	$('#keanggotaan').on('change', function(){
+		let values = $(this).val();
+		console.log(values);
+		if(values === 'ya'){
+			initAnggota();
+		}else if(values === 'tidak'){
+			initBukanAnggota();
+		}else{
+			initNotChoice();
+		}
+	});
 	/*
 	    Navigation
 	*/
