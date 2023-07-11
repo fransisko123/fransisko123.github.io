@@ -11,3 +11,11 @@
   background: rgba(0, 0, 0, 0.59);
   opacity: .5;
 }
+
+.default-color{
+	color: #ffffff !important;
+}
+
+.over-hr{
+  border-top: 1px solid rgba(255, 255, 255, 0.9) !important;
+}

@@ -71,7 +71,9 @@ jQuery(document).ready(function() {
     margin:10,
     autoplay:true,
     autoplayTimeout:5000,
-    autoplayHoverPause:true		
+    autoplayHoverPause:true,
+		// autoWidth:true,
+		// autoHeight:true
 	});
 	
 	
@@ -117,7 +119,7 @@ jQuery(document).ready(function() {
 	});
 	// toggle "navbar-no-bg" class
 	$('.top-content .carousel-caption h1').waypoint(function() {
-		$('nav').toggleClass('navbar-no-bg');	
+		//$('nav').toggleClass('navbar-no-bg');	
 
 	});
 	$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
