@@ -20,18 +20,18 @@ body {
     min-height: calc(100vh - 110px);
   }
 
-  /* footer {
+  footer {
     background: #444343;
-    height: 100px;
-    z-index: 9999;
-  }	 */
+    height: 450px !important;
+    z-index: 9999 !important;
+  }
 
 }
 
 /* ***** MANAGEMENT CONTENT SUPPORT MOBILE ***** */
 .main-container-mod {
   margin-top: 48px;
-  /*margin-bottom: 100px;*/
+  margin-bottom: 450px;
 }
 
 strong { font-weight: 600; }
